@@ -1,0 +1,23 @@
+{
+  "name": "node-eco",
+  "version": "1.0.0",
+  "description": "About nodejs.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likuner/node-eco.git"
+  },
+  "author": "likuner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/likuner/node-eco/issues"
+  },
+  "homepage": "https://github.com/likuner/node-eco#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "htmlparser2": "^8.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
