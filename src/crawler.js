@@ -1,3 +1,4 @@
+const http = require('http')
 const https = require('https')
 const cheerio = require('cheerio')
 
@@ -8,7 +9,7 @@ const filterData = (data) => {
   })
 }
 
-const fetchData = () => {
+const server = http.createServer((req, res) => {
   let data = ''
   https.get('https://www.meizu.com', (result) => {
     result.on('data', (chunk) => {
@@ -18,6 +19,8 @@ const fetchData = () => {
       filterData(data)
     })
   })
-}
+})
 
-fetchData()
+server.listen('8080', () => {
+  console.log('listen -> localhost:8080');
+})
