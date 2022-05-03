@@ -2,7 +2,9 @@
   "name": "node-eco",
   "version": "1.0.0",
   "description": "About nodejs.",
-  "scripts": {},
+  "scripts": {
+    "crawl": "nodemon ./src/crawler"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/likuner/node-eco.git"
